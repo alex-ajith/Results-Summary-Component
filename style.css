@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: hsl(221, 100%, 96%);
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    border-radius: 24px;
+}
+.results-card {
+    width: 50%;
+    padding: 30px 32px;
+    text-align: center;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+.result-title {
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 30px;
+}
+.score-circle {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+.score-circle h1{
+    color: hsl(0, 0%, 100%);
+    padding-top: 15px;
+    font-size: 64px;
+}
+.score-circle p{
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+}
+.result-summary{
+    margin-top: 16px;
+}
+.result-summary b{
+    font-size: 24px;
+    color: hsl(0, 0%, 100%);
+}
+.result-summary p{
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+    margin-top: 16px;
+}
+.summary-card {
+    width: 50%;
+    padding: 26px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.summary-title {
+    color: black;
+    font-weight: 800;
+}
+.score {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.score-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 4px;
+    border-radius: 10px;
+}
+.score-bar:nth-child(1) {
+    background-color: hsl(0, 100%, 67%, .1);
+}
+.score-bar:nth-child(1) .icon b{
+    color: hsl(0, 100%, 67%);
+}
+.score-bar:nth-child(2) {
+    background-color: hsl(39, 100%, 56%, .1);
+}
+.score-bar:nth-child(2) .icon b{
+    color: hsl(39, 100%, 56%);
+}
+.score-bar:nth-child(3) {
+    background-color: hsl(166, 100%, 37%, .1);
+}
+.score-bar:nth-child(3) .icon b{
+    color: hsl(166, 100%, 37%);
+}
+.score-bar:nth-child(4) {
+    background-color: hsl(234, 85%, 45%, .1);
+}
+.score-bar:nth-child(4) .icon b{
+    color: hsl(234, 85%, 45%);
+}
+.icon {
+    display: flex;
+    gap: 5px;
+}
+.score-bar span {
+    color: gray;
+}
+button {
+    margin-top: auto;
+    padding: 16px;
+    border: none;
+    border-radius: 32px;
+    background-color: hsl(224, 30%, 27%);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+button:hover {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));;
+}
+
+
+@media screen and (max-width: 650px){
+    .container {
+        flex-direction: column;
+        margin: 0 16px;
+    }
+    .results-card {
+        width: inherit;
+        box-shadow: none;
+    }
+    .summary-card {
+        width: inherit;
+    }
+}
